@@ -1,8 +1,0 @@
-MIDlet-Version: 1.3.5
-MIDlet-Vendor: Numfum Ltd
-MIDlet-Data-Size: 10240
-MIDlet-Jar-URL: jsr-midp2.jar
-MicroEdition-Configuration: CLDC-1.1
-MicroEdition-Profile: MIDP-2.0
-MIDlet-1: Opposite Lock,,numfum.j2me.jsr.Stub
-MIDlet-Name: Opposite Lock
