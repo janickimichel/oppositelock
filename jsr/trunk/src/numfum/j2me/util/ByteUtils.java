@@ -19,7 +19,7 @@ public final class ByteUtils {
 	}
 	
 	/**
-	 *	Stores an int at the specfied offset in a byte array. Ints are stored
+	 *	Stores an int at the specified offset in a byte array. Ints are stored
 	 *	in four consecutive bytes.
 	 */
 	public static byte[] intToBytes(byte[] data, int offset, int value) {
