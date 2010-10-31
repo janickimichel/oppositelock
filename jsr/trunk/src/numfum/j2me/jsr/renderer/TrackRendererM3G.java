@@ -294,9 +294,10 @@ public final class TrackRendererM3G extends TrackRenderer {
 		viewScale = in.readUnsignedByte();
 		viewHorzn = in.readUnsignedByte();
 		
-		float viewAngleF = in.readFloat();
-		float viewVdistF = in.readFloat();
-		viewTilt = in.readFloat();
+		// Note: these were all in.readFloat() but compilation was failing with MTJ
+		float viewAngleF = Float.intBitsToFloat(in.readInt());
+		float viewVdistF = Float.intBitsToFloat(in.readInt());
+		viewTilt = Float.intBitsToFloat(in.readInt());
 		
 		if (close && in instanceof DataInputStream) {
 			((DataInputStream) in).close();
